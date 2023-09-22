@@ -1,0 +1,465 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #f2f2f2;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;   
+	z-index: 100;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 30px;
+	
+}
+.navbar{
+     gap: 20px;
+	justify-content: space-between;
+}
+.navbar a{
+	color: black;
+	 text-decoration: none;
+	 display: inline-block;
+	 padding:  10px 0;
+	 text-transform: capitalize;
+	 transition: 0.2s;
+	 font-size: 25px;
+}
+.navbar a:hover{
+	color: black;
+}
+.nav-links{
+  gap: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+}
+.homepage{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url("cam0.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.homepage::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0, 0, 0.1);
+	width: 100%;
+	height: 100%;
+
+}
+
+
+.homepage .content{
+	position: relative;
+	height: 85%;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.homepage .text{
+     
+	color: white;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+	font-style: verdana;
+	
+
+}
+.homepage .text h2{
+	font-size: 80px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.homepage a{
+	color:#333;
+    text-decoration: none;
+	background-color: white;
+	padding: 10px 30px;
+	border-radius: 5px;
+	border: 2px solid white;
+    box-shadow: rgba(0,0, 0, 0.3);
+	font-size: 18px;
+	transition: 0.3s;
+}
+.homepage a:hover{
+	color: #fff;
+	background: rgba(255,255, 255, 0.3);
+}
+/* section */
+.section{
+	padding-top: 90px;
+
+}
+.section-title{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 50px;
+
+}
+section h2{
+	font-size: 100px;
+
+}
+
+section .cards{
+	margin-top: 50px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+section .card {
+	width: calc(100% / 3 - 30px);
+	text-align: center;
+	list-style: none;
+	background-color:#fff;
+	padding: 40px 15px;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0,0, 0, 0.04);
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+section .card  img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	text-align: center;
+
+
+}
+section .card p{
+	margin-top: 10px;
+	font-size: 20px;
+
+
+}
+.card h3{
+	
+	font-size: 30px;
+	margin-top: 5px;
+}
+.portfolio .card {
+	padding: 0 0 20px;
+}
+.portfolio .card  img{
+
+	height: 240px;
+	width: 100%;
+	border-radius: 8px 8px 0 0 ;
+}
+/* about */
+
+.about .company-info{
+	margin-top: 30px;
+
+}
+.about .row{
+	padding: 0 10px;
+}
+.about h3{
+	margin: 30px 0 10px;
+
+}
+.about ul{
+	padding-left: 30px;
+}
+.about p{
+	text-decoration: none;
+	font-style: normal;
+	font-size: 20px;
+}
+
+.contact .row{
+	margin: 60px 0 90px;
+	justify-content: space-between;
+}
+.contact .row .col{
+    padding: 0 20px;
+	width: calc(100% / 2 - 30px);
+	
+}
+.contact .row .col p{
+    color: #7a7a7a;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	
+}
+.contact .row .col p i{
+    margin-right: 10px;
+	
+}
+
+.contact form input{
+	width: 50%;
+	height: 50px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	padding: 20px 20px;
+	border: 1px solid #bfbfbf;
+    outline: none;
+
+}
+.contact form textarea{
+	padding: 20px;
+	width: 50%;
+	height: 150px;
+	outline: none;
+	resize: none;
+	border: 1px solid #bfbfbf;
+	margin-left: 30px;
+
+}
+.contact form button{
+	padding: 20px 20px;
+	border: 6px;
+	font-size: 15px;
+	color: #fff;
+	border: none;
+	background: #333;
+	margin-top: 10px;
+	margin-left: 30px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.contact form button:hover{
+	background: #7e7575;
+
+}
+.footer{
+	background-color: #868181;
+	padding: 15px  0px;
+	
+}
+.footer span{
+	color: #f7f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.main{
+	width: 1050px;
+	height: 1500px;
+	font-size: 300px;
+	font-style: italic;
+	background-color: aquamarine;
+}
+.main:hover{
+	background-color: rgb(0, 191, 255);
+	font-style: italic;
+	color: white;
+	width: 550px;
+	height: 750px;
+	font-size: 150px;
+
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.box{
+	width: 100%;
+	height: 400px;
+	border: 2px solid darkred;
+	margin: auto;
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.sun{
+	width: 400px;
+	height: 400px;
+	background-color: orange;
+	border-radius: 50%;
+	top: 20px;
+	left: -15px;
+	position: absolute;
+	animation-name: sun;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+.cloud1{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top:20px ;
+	left: -10px;
+	opacity: 0.8;
+	animation-name: cloud1;
+	animation-duration: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+
+
+
+}
+.cloud2{
+    width: 250px;
+	height: 200px;
+	position: absolute;
+	top:80px ;
+	left: 1000px;
+	opacity: 0.8;
+    animation-name: cloud2;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+.cloud3{
+    width: 250px;
+	height: 200px;
+	position: absolute;
+	top:0px ;
+	right: -400px;
+	opacity: 0.8;
+    animation-name: cloud3;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+ }
+ @keyframes{
+ 	  from{
+           top: 20px;
+	       left: -15px;
+ 	  }
+ 	  to{
+         top: 0px;
+         left: 110%;
+ 	  } 
+ }
+ @keyframes{
+
+ 	 from{
+           top:20px ;
+	       left: -10px;
+ 	 }
+ 	 to{
+        
+        top: 80px;
+        right: 100px;
+ 	 }
+ }
+ @keyframes{
+ 	from{
+         top:80px ;
+	     left: 1000px;
+
+ 	}
+ 	to{
+
+       top: 10px;
+       left: 800px;
+ 	}
+ }
+ @keyframes{
+ 	from{
+         top:0px ;
+	     right: -400px;
+ 	}
+ 	to{
+
+       top: 20px;
+       right: -800px;
+ 	}
+ }
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar{
+	font-size: 30px;
+    margin-top: 50px;
+width: 100%;
+	height: 100%; 
+	border: 2px solid black;
+	background-color: skyblue;
+	color: red;
+	text-align: center;
+
+}
+.main{
+	background-color: orange;
+	font-size: 30px;
+
+}
+.ani{
+	width: 1000px;
+	height: 1000px;
+	background-image: url('web.jpg');
+	box-shadow: -20px 30px 30px 40px red;
+	margin: auto;
+	margin-top: 100px;
+
+}
+.animate{
+	       animation: animate 10s;
+           animation-delay: 0s;
+           animation-iteration-count: infinite;
+           animation-fill-mode: both; 
+           animation-direction: alternate;
+}
+
+*/
